@@ -6,3 +6,9 @@ D = "SI"
 E = "NO"
 F = "EMPECEMOS"
 G = "ADIOS"
+if(C == D):
+    print(F)
+else:
+    print(G)
+
+    
