@@ -1,3 +1,3 @@
-x = 20
-z = 10
-print(x + z)
+A = str(input("Ingrese el nombre de usuario: "))
+B = "Bienvenido "
+print(B + A)
