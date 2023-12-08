@@ -26,8 +26,9 @@ if(C == D.lower()):
             print("!!CORRECTO!!")
             print("GANASTE")
     else:
-        print("MAl")
+        print("FALLASTE INTENTA CON UNA LETRA")
         for i in range (6):
+            
             LETRA = str(input("ESCRIBE UNA LETRA:_"))
 
             if LETRA == "u":
@@ -49,10 +50,9 @@ if(C == D.lower()):
             elif (LETRA == "o"):
                 print("!!CORRECTO!!")
                 print("MURCIELAGO")
-            else:
-                print("MAL")
         
-        break
+            else:
+                print("MAL")   
         
         print("vidas agotadas, perdiste")
     
