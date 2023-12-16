@@ -4,7 +4,7 @@ A = str(input("Ingrese el nombre del jugador: "))
 B = "Bienvenido "
 print(B + A)
 print("POR FAVOR ACTIVA LAS MAYUSCULAS")
-C = str(input("Quieres jugar?"))
+C = str(input("Quieres jugar?")) .upper()
 D = "SI"
 E = "NO"
 F = "!!__EMPECEMOS__!!"
@@ -17,7 +17,7 @@ if(C == D):
     print(F)
     str(print("!!INTETNA ADIVINAR LA SIGUIENTE PALABRA COMPLETA!!"))
     str(print("--!!M _ RC _ _ L _ G _.!!--"))
-    LETRA = str(input("INGRESA TU RESPUESTA :"))
+    LETRA = str(input("INGRESA TU RESPUESTA :")) .upper()
     if (LETRA == "MURCIELAGO"):
             print("!!WOW ERES UN GENIO!!")
             print("!!_-FELICIDADES GANASTE-_!!")
@@ -92,8 +92,9 @@ if(C == D):
         else:
             print("!!_-FELICIDADES GANASTE-_!!")
             print("GRACIAS POR JUGAR " + A)
-       
-else:
+elif (C == E):   
     print("ENTENDIDO, " + G + " " + A)
+else:
+    print("Respuesta no identificada reinica el juego por favor " + A)
 
 #Aqui finaliza el juego y se cierra.G
