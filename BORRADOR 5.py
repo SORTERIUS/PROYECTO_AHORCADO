@@ -4,20 +4,26 @@ A = str(input("Ingrese el nombre del jugador: "))
 B = "Bienvenido "
 print(B + A)
 
-C = str(input("Quieres jugar?")) .upper()
+C = str(input("Quieres jugar? (SI/NO)")) .upper()
 D = "SI"
 E = "NO"
 F = "!!__EMPECEMOS__!!"
 G = "VUELVE PRONTO"
 
+#Aqui se usa la primera funcion
+
+
 def BIEN(WIN):
-                    
     print("!!CORREECTO!!")
     print(WIN)
     print("PUNTOS")
     return WIN + (20)
 
+#Se importa la libreria random
+
 import random
+
+#Se crea una base de datos, junto con las palabras y problemas que contiene el juego
 
 BASEDEDATOS = ["PALABRA","PABLABRA2","PALABLRA3"]
 
@@ -33,11 +39,17 @@ PALABRA3 = ["C","O","M","U","N","I","C","A","R","S","E"]
 PROBLEMA3 = ["C","_","M","_","N","_","C","_","R","S","_"]
 #INDEX [0,1,2,3,4,5,6,7,8]
 
+#aqui empieza la interfaz del usuario y le pregunta si desea jugar
+
 if(C == D):
     print("!!__GENIAL__!!")
     print(F)
 
+    #aqui se inserta la funcion random choise para escoger de  forma aleatoria un prblema
+
     FILE = random.choice(BASEDEDATOS)
+
+    # empieza el juego con la primera palabra escogida al azar
 
     if(FILE == BASEDEDATOS[0]):
         
@@ -56,6 +68,7 @@ if(C == D):
             print(PROBLEMA)
 
             while WIN <= 99:
+                
                 LETRA = str(input("INTENTA INGRESA UNA LETRA:_")).upper()
                 if PALABRA[1] == LETRA:
                     PROBLEMA[1] = "U"
@@ -88,12 +101,16 @@ if(C == D):
                         print("TE QUEDAN:")
                         print(SCORE)
                         print("VIDAS")
-                        print("!!HAS PERDIDO :(!!") 
+                        print("!!HAS PERDIDO :(!!")
+                        print("LA PALABRA CORRECTA ES:")
+                        print(PALABRA)
                         print("GRACIAS POR JUGAR " + A)
                         break
             else:
                 print("!!_-FELICIDADES GANASTE-_!!")
                 print("GRACIAS POR JUGAR " + A)
+
+    # aqui empieza la segunda palabra
 
     elif (FILE == BASEDEDATOS[1]):
 
@@ -143,12 +160,16 @@ if(C == D):
                         print("TE QUEDAN:")
                         print(SCORE)
                         print("VIDAS")
-                        print("!!HAS PERDIDO :(!!") 
+                        print("!!HAS PERDIDO :(!!")
+                        print("LA PALABRA CORRECTA ES:")
+                        print(PALABRA2)
                         print("GRACIAS POR JUGAR " + A)
                         break
             else:
                 print("!!_-FELICIDADES GANASTE-_!!")
                 print("GRACIAS POR JUGAR " + A)
+
+    #aqui empieza la tercera palabra
 
     elif (FILE == BASEDEDATOS[2]):
 
@@ -199,7 +220,9 @@ if(C == D):
                         print("TE QUEDAN:")
                         print(SCORE)
                         print("VIDAS")
-                        print("!!HAS PERDIDO :(!!") 
+                        print("!!HAS PERDIDO :(!!")
+                        print("LA PALABRA CORRECTA ES:")
+                        print(PALABRA3)
                         print("GRACIAS POR JUGAR " + A)
                         break
             else:
