@@ -39,7 +39,7 @@ if(C == D):
         #  hasta completarla, solo tiene 5 vidas para adivinar, caso contratio pierde  
 
         while WIN <= 99:
-            LETRA = str(input("INTENTA INGRESA UNA LETRA:_"))
+            LETRA = str(input("INTENTA INGRESA UNA LETRA:_")).upper()
             if PALABRA[1] == LETRA:
                 PROBLEMA[1] = "U"
                 print("!!CORREECTO!!")
