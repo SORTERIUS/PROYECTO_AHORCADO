@@ -228,8 +228,7 @@ if(C == D):
             else:
                 print("!!_-FELICIDADES GANASTE-_!!")
                 print("GRACIAS POR JUGAR " + A)
-
-
+                
 elif (C == E):   
     print("ENTENDIDO, " + G + " " + A)
 else:
